@@ -2,7 +2,7 @@ public class Book {
     private static String title;
     private static int year;
 
-    public static Book createBook(String title, int year){
+    public Book createBook(String title, int year){
         Book book = new Book();
 
         Book.title = title;
