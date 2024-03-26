@@ -1,20 +1,10 @@
 public class Book {
-    private static String title;
-    private static int year;
+    private String title;
+    private int year;
 
-    public static Book createBook(String title, int year){
-        Book book = new Book();
-
-        Book.title = title;
-        Book.year = year;
-
-        return book;
-    }
-
-    public Book() {
+    public Book(String title, int year) {
         this.title = title;
         this.year = year;
-
     }
 
     public String getTitle() {

@@ -1,22 +1,11 @@
 public class Autor {
-    private static String firstName;
-    private static String lastName;
+    private String firstName;
+    private String lastName;
 
-    public static Autor createAutor(String firstName, String lastName) {
-        Autor autor = new Autor();
-
-        Autor.firstName = firstName;
-        Autor.lastName = lastName;
-
-        return autor;
-    }
-
-    public Autor() {
+    public Autor(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-
     }
-
 
     public String getFirstName() {
         return this.firstName;
