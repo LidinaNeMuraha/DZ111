@@ -1,23 +1,18 @@
 public class Main {
-    public void main(String[] args) {
-        Autor autor1 = new Autor("Федор", "Достаевский");
-        System.out.println("Имя автора " + autor1.getFirstName());
-        System.out.println("Фамилия автора " + autor1.getLastName());
+    public static void main(String[] args) {
 
-        Book book1 = new  Book ("Преступление и наказание", autor1,1865);
-        System.out.println("Название книги " + book1.getTitle());
-        System.out.println("Год выпуска книги " + book1.getYear());
+            Autor author = new Autor("Федор", "Достаевский");
+            Book book = new Book("Преступление и наказание", author, 1865);
 
-        Autor autor2 = new Autor("Лев", "Толстой");
-        System.out.println("Имя автора " + autor2.getFirstName());
-        System.out.println("Фамилия автора " + autor2.getLastName());
+        Autor author2 = new Autor("Лев", "Толстой");
+        Book book2 = new Book("Война и мир", author2, 1873);
 
-        Book book2 = new  Book ("Война и мир", autor2,1864);
-        System.out.println("Название книги " + book2.getTitle());
-        System.out.println("Год выпуска книги " + book2.getYear());
+        System.out.println(author.toString());
+        System.out.println(book.toString());
+        System.out.println(author2.toString());
+        System.out.println(book2.toString());
 
-        book2.setYear(1863);
-        System.out.println(book2.getYear());
+
 
 
 
